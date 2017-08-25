@@ -16,7 +16,7 @@
     <div id="container">
       <div class="order-start">
         <h3>Start your order!</h3>
-        <p>Click below to start your order.</p>
+        <p>Build your own pizzas!</p>
         <button type="button" class="btn btn-danger">Order Now</button>
       </div>
       <div class="info-input hide">
@@ -53,7 +53,7 @@
             <label class="checkbox-inline"><input type="radio" name="payment" value="cash" checked>Cash</label>
             <label class="checkbox-inline"><input type="radio" name="payment" value="credit">Credit</label>
           </div>
-          <button type="submit" class="btn btn-danger">Submit</button>
+          <button type="submit" class="btn btn-success">Submit</button>
         </form>
       </div>
       <div class="pizza-input hide">
@@ -132,8 +132,20 @@
           <button type="submit" class="btn btn-danger">Add Pizza</button>
         </form>
       </div>
-
-
+      <div class="order-summary hide">
+        <h3>Your order.</h3>
+        <p>Click on a pizza to view and hide more information.</p>
+        <div class="pizza-list"></div>
+        <h3>Total Cost: <span id="pizza-list-total-cost"></span></h3>
+        <button id="add-another-pizza" class="btn btn-success">Add another Pizza</button>
+        <button id="checkout-order" class="btn btn-success">Checkout Out</button>
+      </div>
+      <div class="checked-out hide">
+        <h3>Your order is now ready to go!</h3>
+        <p>Place another order.</p>
+        <button type="button" class="btn btn-danger" id="new-order">New Order</button>
+        <p>Demo of objects using constructors and prototypes</p>
+        <button class="btn btn-default" id="console-log">Log Object to Console</buton>
       </div>
     </div>
   </body>
