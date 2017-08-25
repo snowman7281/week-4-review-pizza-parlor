@@ -78,6 +78,21 @@ var createCustomerOrder = function() {
   return new Order(firstName, lastName, address, phone, payment);
 }
 
+var createPizza = function() {
+  var pizzaSize = $('input[name="pizza-size"]:checked').val();
+  var cheese = $('input[name="cheese-options"]:checked').val();
+  var newPizza = new Pizza(pizzaSize, cheese);
+  $('input[name="meats"]:checked').each(function() {
+    newPizza.addMeat($(this).val());
+  });
+  var vegToppings = [];
+  $('input[name="veggies"]:checked').each(function() {
+    newPizza.addVeg($(this).val());
+  });
+  resetPizzaForm();
+  return newPizza;
+}
+
 
 $(document).ready(function(){
 
