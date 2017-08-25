@@ -92,6 +92,14 @@ var createPizza = function() {
   resetPizzaForm();
   return newPizza;
 }
+var resetPizzaForm = function() {
+  $('input[name="pizza-size"]:checked').attr("checked", false);
+  $('input[value="medium"]').prop("checked", true);
+  $('input[name="cheese-options"]:checked').attr("checked", false);
+  $('input[value="regular"]').prop("checked", true);
+  $('input[name="meats"]:checked').attr("checked", false);
+  $('input[name="veggies"]:checked').attr("checked", false);
+}
 
 
 $(document).ready(function(){
