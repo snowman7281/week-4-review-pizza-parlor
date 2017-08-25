@@ -36,10 +36,49 @@ Pizza.prototype.newCost = function() {
   this.cost = cost;
 }
 
+// constructor for order and each pizza
+function Order(firstName, lastName, address, phone, payment) {
+  this.firstName = firstName;
+  this.address = address;
+  this.phone = phone;
+  this.payment = payment;
+  this.pizzas = [];
+}
+Order.prototype.addPizza = function(pizza) {
+  pizza.newCost();
+  this.pizzas.push(pizza);
+}
+Order.prototype.removePizza = function(pizzaNumber) {
+  this.pizzas.splice(pizzaNumber-1,1);
+}
+Order.prototype.determineTotalCost = function() {
+  var totalCost = 0;
+  this.pizzas.forEach(function(pizza) {
+    totalCost += pizza.cost;
+  });
+  this.totalCost = totalCost;
+}
 
 
 
 //user interface or frontend
+
+var nextDiv = function(toHide, toShow) {
+  $(toHide).hide();
+  $(toShow).show();
+}
+
+var createCustomerOrder = function() {
+  var firstName = $('#first-name').val();
+  var lastName = $('#last-name').val();
+  var address = $('#street').val() + ', ' + $('#city').val() + ', ' + $('#state').val() + ', ' + $('#zip-code').val();
+  var phone = $('#phone').val();
+  var payment = $('input[name="payment"]:checked').val();
+
+  return new Order(firstName, lastName, address, phone, payment);
+}
+
+
 $(document).ready(function(){
 
 
