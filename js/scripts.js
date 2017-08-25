@@ -16,19 +16,19 @@ Pizza.prototype.addVeg = function(veggie) {
 Pizza.prototype.refreshCost = function() {
   var cost = 0;
   if (this.pizzaSize === "medium") {
-    cost = 9;
+    cost = 12;
   } else if (this.pizzaSize === "small") {
-    cost = 7;
+    cost = 10;
   } else if (this.pizzaSize === "large") {
-    cost = 11;
+    cost = 14;
   } else if (this.pizzaSize === "extra large") {
-    cost = 13;
+    cost = 16;
   }
   this.meatToppings.forEach(function() {
-    cost += 1.25;
+    cost += 2;
   });
   this.vegToppings.forEach(function() {
-    cost += 0.75;
+    cost += 1;
   });
   if (this.cheese === "extra") {
     cost += 1;
