@@ -1,3 +1,26 @@
-.hide{
-  /*display: none;*/
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+
+
+.initially-hidden {
+  display: none;
+}
+
+.header {
+  text-align: center;
+  font-family: 'Shrikhand', cursive;
+  font-weight: 400;
+  background-color: red;
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.pizza-info-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.pizza h4 {
+  color: blue;
+  cursor: pointer;
+  font-weight: bold;
 }
