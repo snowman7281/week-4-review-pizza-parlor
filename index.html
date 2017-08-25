@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Pizza Parlor</title>
+  </head>
+  <body>
+    <div class="header page-header">
+      <h1>Mama Mia Pizzaria</h1>
+      <h2>World famous pizzas!</h2>
+    </div>
+    <div id="container">
+      <div class="order-start">
+        <h3>Start your order!</h3>
+        <p>Click below to start your order.</p>
+        <button type="button" class="btn btn-danger">Order Now</button>
+      </div>
+      <div class="info-input hide">
+        <h3>Your Information</h3>
+        <form>
+          <div class="form-group">
+            <label for="first-name">Name: </label>
+            <input id="first-name" type="text" placeholder="Joe">
+
+            <label for="last-name">Name: </label>
+            <input id="last-name" type="text" placeholder="Smoe">
+          </div>
+          <div class="form-group">
+            <label for="street">Street Address: </label>
+            <input id="street" type="text" placeholder="1201 3rd ave s.">
+          </div>
+          <div class="form-group">
+            <label for="city">City: </label>
+            <input id="city" type="text" placeholder="Seattle">
+          </div>
+          <div class="form-group">
+            <label for="state">City: </label>
+            <input id="state" type="text" placeholder="WA">
+          </div>
+          <div class="form-group">
+            <label for="zip-code">Zip Code: </label>
+            <input id="zip-code" type="text" placeholder="98101">
+          </div>
+          <div class="form-group">
+            <label for="customer-phone">Phone Number: </label>
+            <input id="phone" type="text" placeholder="206-240-1234">
+          </div>
+          <div class="form-group">
+            <label class="checkbox-inline"><input type="radio" name="payment" value="cash" checked>Cash</label>
+            <label class="checkbox-inline"><input type="radio" name="payment" value="credit">Credit</label>
+          </div>
+          <button type="submit" class="btn btn-danger">Submit</button>
+        </form>
+      </div>
+      <div class="pizza-input hide">
+        <h3>Build a pizza!</h3>
+        <form>
+          <div class="size form-group">
+            <h4>Pizza Size:</h4>
+            <label class="checkbox-inline"><input type="radio" name="pizza-size" value="small"> Small ($10)</label>
+            <label class="checkbox-inline"><input type="radio" name="pizza-size" value="medium" checked> Medium ($12)</label>
+            <label class="checkbox-inline"><input type="radio" name="pizza-size" value="large"> Large ($14)</label>
+            <label class="checkbox-inline"><input type="radio" name="pizza-size" value="extra large"> Extra Large ($16)</label>
+          </div>
+          <div class="meats form-group">
+            <h4>Meats: ($2 each) </h4>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="meat-toppings" value="Pepperoni">Pepperoni
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="meat-toppings" value="Sausage">Sausage
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="meat-toppings" value="Ham">Ham
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="meat-toppings" value="Meatball">Meatball
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="meat-toppings" value="Hamburger">Hamburger
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="meat-toppings" value="Bacon">Bacon
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="meat-toppings" value="Grilled Chicken">Grilled Chicken
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="meat-toppings" value="Meat Surprise">Meat Surprise
+            </label>
+          </div>
+          <div class="veggies form-group">
+            <h4>Veggies: ($1 each) </h4>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veggies" value="Olives">Olives
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veggies" value="Tomatoes">Tomatoes
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veggies" value="Onions">Onions
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veggies" value="Green Peppers">Green Peppers
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veggies" value="Mushrooms">Mushrooms
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veggies" value="Basil">Basil
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veggies" value="Spinach">Spinach
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veggies" value="Banana Peppers">Banana Peppers
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="veggies" value="Pineapple">Pineapple
+            </label>
+          </div>
+          <div class="cheese  form-group">
+            <h4>Cheese: </h4>
+            <label class="checkbox"><input type="radio" name="cheese-options" value="regular" checked>  Regular</label>
+            <label class="checkbox"><input type="radio" name="cheese-options" value="extra">  Extra Cheese <em>(add $2)</em></label>
+            <label class="checkbox"><input type="radio" name="cheese-options" value="none">  No Cheese</label>
+          </div>
+          <button type="submit" class="btn btn-danger">Add Pizza</button>
+        </form>
+      </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>
